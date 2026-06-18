@@ -1,0 +1,8 @@
+import random
+num = random.randint(1, 10)
+guess = int(input("enter guess no "))
+
+if guess == num:
+    print("correct guess")
+else:
+    print("wrong guess")
