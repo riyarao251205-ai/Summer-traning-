@@ -1,0 +1,14 @@
+class bankaccount:
+    def __init__(self,accountno,name,balance):
+        self.accountno=accountno
+        self.name=name
+        self.balance=0
+    def deposit(self,amount):
+        self.balance=self.balance+amount
+        return(self.balance)
+    def withdraw(self,amount):
+        self.balance=self.balance-amount
+        return(self.balance)
+account = bankaccount(1, "John", 0)
+print(account.deposit(1000))
+print(account.withdraw(10))
