@@ -1,0 +1,14 @@
+a = float(input("enter a no "))
+b = float(input("enter b no "))
+op = input("enter operator: ")
+
+if op == "+":
+    print(a + b)
+elif op == "-":
+    print(a - b)
+elif op == "*":
+    print(a * b)
+elif op == "/":
+    print(a / b)
+else:
+    print("not operator")
