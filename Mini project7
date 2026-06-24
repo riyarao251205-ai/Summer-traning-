@@ -1,0 +1,52 @@
+class SalarySystem:
+
+    @staticmethod
+    def manager():
+        basic = 80000
+        extra_rate = 1000  
+
+        extra_hours = int(input("enter extra hr "))
+        extra_pay = extra_hours * extra_rate
+        print(extra_pay)
+        total = basic + extra_pay
+        print(total)
+        return total
+
+    @staticmethod
+    def developer():
+        basic = 40000
+        extra_rate = 800 
+
+        extra_hours = int(input("enter extra hr "))
+        extra_pay = extra_hours * extra_rate
+        print(extra_pay)
+        total = basic + extra_pay
+        print(total)
+        return total
+
+    @staticmethod
+    def intern():
+        basic = 15000
+        extra_rate = 150
+        extra_hours = int(input("enter extra hr"))
+        extra_pay = extra_hours *extra_rate
+        print(extra_pay)
+        total =basic + extra_pay
+        print(total)
+        return total
+choice = input("enter your choice ")
+
+if choice == "1":
+    amount = SalarySystem.manager()
+
+elif choice == "2":
+    amount = SalarySystem.developer()
+
+elif choice == "3":
+    amount = SalarySystem.intern()
+
+else:
+    print("Invalid choice!")
+    amount = 0
+
+print("total salary", amount)
