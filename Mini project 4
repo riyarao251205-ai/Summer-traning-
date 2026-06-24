@@ -12,3 +12,5 @@ class bankaccount:
 account = bankaccount(1, "John", 0)
 print(account.deposit(1000))
 print(account.withdraw(10))
+
+
