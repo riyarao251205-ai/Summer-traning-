@@ -1,0 +1,14 @@
+para=input("enter para")
+words=para.split()
+print(len(words))
+max_length = len(max(words, key=len))
+print(max_length)
+for word in words:
+    if len(word) == max_length:
+        print(word)
+vowels="aeiouAEIOU"
+count=sum(para.count(ch) for ch in (set(para) and vowels))
+"""for char in para:
+    if char in vowels:
+        count=count+1"""
+print(count)
